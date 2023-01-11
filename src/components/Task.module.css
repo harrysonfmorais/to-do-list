@@ -1,0 +1,143 @@
+.formTasks {
+  width: 736px;
+  margin: 0 auto;
+  margin-top: -5rem;
+}
+
+.inputTasks {
+  display: flex;
+}
+
+.inputTasks input,
+.inputTasks button {
+  padding: 1rem;
+  border-radius: 8px;
+  border: none;
+}
+
+.inputTasks input {
+  margin-right: 8px;
+  width: 638px;
+  background-color: var(--gray-500);
+  color: var(--gray-100);
+}
+
+.inputTasks button {
+  background-color: var(--blue-dark);
+  color: var(--gray-100);
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+
+  transition: background 0.2s ease-in-out;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputTasks button:hover {
+  background-color: var(--blue);
+}
+
+.inputTasks button img {
+  display: flex;
+  margin-left: 8px;
+}
+
+.containerTaskList {
+  width: 736px;
+  margin: 0 auto;
+  margin-top: 64px;
+}
+
+.headerTaskList {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.headerTaskList strong:nth-child(1) {
+  color: var(--blue);
+}
+
+.headerTaskList strong:nth-child(2) {
+  color: var(--purple);
+}
+
+.headerTaskList span {
+  text-align: center;
+  background-color:var(--gray-500);
+  color: var(--gray-100);
+  padding: 2px 8px;
+  border-radius: 999px;
+  margin-left: 8px;
+}
+
+.taskList {
+  width: 736px;
+  margin: 0 auto;
+  margin-top: 64px;
+}
+
+.taskList li {
+  background-color: var(--gray-500);
+  color: var(--gray-100);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.taskList li img {
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+.taskList li img:hover {
+  background: var(--blue-dark);
+  border-radius: 8px;
+}
+
+.taskList li button {
+  background-color: transparent;
+  border: 0;
+  color: var(--gray-300);
+  cursor: pointer;
+  line-height: 0;
+  border-radius: 2px;
+
+  transition: color 0.2s ease-in-out;
+}
+
+.taskList li button:hover {
+  color: var(--red);
+}
+
+/*----- tarefas concluídas -----*/
+.completed {
+  text-decoration: line-through;
+}
+
+/*----- Sem nenhuma tarefa a fazer -----*/
+.emptyTask {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 22.4px;
+}
+
+.emptyTask img {
+  margin-top: 64px;
+  margin-bottom: 16px;
+}
+
+.emptyTask strong,
+.emptyTask span {
+  color: var(--gray-300);
+}
